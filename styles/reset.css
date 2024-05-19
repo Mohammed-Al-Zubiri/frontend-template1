@@ -8,10 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: var(--font), sans-serif;
-}
-
 img,
 picture,
 video,
@@ -29,3 +25,79 @@ button {
   cursor: pointer;
   color: inherit;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Reset Font Sizes ===== */
+
+body {
+  font-size: var(--size-xs);
+}
+
+h1 {
+  font-size: var(--size-4xl);
+}
+
+h2 {
+  font-size: var(--size-3xl);
+}
+
+h3 {
+  font-size: var(--size-2xl);
+}
+
+h4 {
+  font-size: var(--size-xl);
+}
+
+h5 {
+  font-size: var(--size-lg);
+}
+
+h6 {
+  font-size: var(--size-md);
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--size-md);
+  }
+
+  h1 {
+    font-size: var(--size-5xl);
+  }
+
+  h2 {
+    font-size: var(--size-4xl);
+  }
+
+  h3 {
+    font-size: var(--size-3xl);
+  }
+
+  h4 {
+    font-size: var(--size-2xl);
+  }
+
+  h5 {
+    font-size: var(--size-xl);
+  }
+
+  h6 {
+    font-size: var(--size-lg);
+  }
+}
+
+
+/* ===== Reset Font Sizes ===== */

@@ -1,0 +1,84 @@
+.community h2 {
+  text-align: center;
+}
+
+.community p {
+  margin-top: var(--size-md);
+}
+
+.audience {
+  width: 100%;
+  padding-top: var(--size-2xl);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: var(--size-xl);
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.target {
+  width: 100%;
+  text-align: center;
+}
+
+.t-icon img {
+  width: 3rem;
+  margin-bottom: var(--size-md);
+}
+
+.t-icon {
+  padding: var(--size-xxs);
+  transform: translate(-0.5rem, 0.5rem);
+  position: relative;
+}
+
+.t-icon::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 65%;
+  background: var(--clr-tint-5);
+  border-radius: var(--size-2xl) var(--size-xxs);
+  bottom: 0.9rem;
+  right: -0.9rem;
+  z-index: -1;
+}
+
+.target h3,
+.target p {
+  text-align: center;
+  margin-top: var(--size-xxs);
+}
+
+.target p {
+  width: 28ch;
+}
+
+@media (min-width: 1024px) {
+  .audience {
+    padding-top: var(--size-3xl);
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: var(--size-3xl);
+  }
+
+  .t-icon img {
+    width: 4rem;
+  }
+
+  .t-icon::before {
+    bottom: 1.2rem;
+    right: -1.2rem;
+  }
+
+  .target h3,
+  .target p {
+    margin-top: var(--size-xs);
+  }
+}
+
+@media (min-width: 643px) and (max-width: 1280px) {
+  .audience :last-child {
+    grid-column: span 2;
+    margin-inline: auto;
+  }
+}

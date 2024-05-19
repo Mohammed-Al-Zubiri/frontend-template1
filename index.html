@@ -5,10 +5,141 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dev Server</title>
+  <title>Nexcent</title>
 </head>
 
 <body>
+  <header class="pg-header container flex center-y ">
+    <img class="logo" src="./public/imgs/logo.png" alt="Nexcent Logo">
+    <div class="header-links flex center-y">
+      <button class="burger-icon">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+      </button>
+			<nav class="nav-menu">
+				<ul class="flex">
+					<li><a class="selected" href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#community">Community</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+				</ul>
+			</nav>
+      <button class="btn with-icon">Register Now</button>
+		</div>
+  </header>
+  <main>
+    <section class="hero">
+			<div class="container flex center-x center-y section">
+				<div class="hero-left">
+					<h1>Lessons and insights <br> <span style="color: var(--clr-primary);">from 8 years</span></h1>
+					<p>Where to grow your business as a photographer: site or social media?</p>
+					<button class="btn">Register</button>
+				</div>
+				<img src="./public/imgs/hero-img.png" alt="Hero Image" class="hero-img">
+			</div>
+      <div class="slide-nav">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+      </div>
+    </section>
+    <section class="clients container flex-col center-y section">
+      <h2>Our Clients</h2>
+      <p>We have been working with some Fortune 500+ clients</p>
+      <div class="logos flex center-y">
+        <img src="./public/imgs/client1.png" alt="Client Logo">
+        <img src="./public/imgs/client2.png" alt="Client Logo">
+        <img src="./public/imgs/client3.png" alt="Client Logo">
+        <img src="./public/imgs/client4.png" alt="Client Logo">
+        <img src="./public/imgs/client5.png" alt="Client Logo">
+        <img src="./public/imgs/client6.png" alt="Client Logo">
+        <img src="./public/imgs/client7.png" alt="Client Logo">
+      </div>
+    </section>
+    <section class="community container flex-col center-y section">
+      <h2>Manage your entire community <br> in a single system</h2>
+      <p>Who is Nextcent suitable for?</p>
+      <div class="audience">
+        <div class="target flex-col center-y">
+          <div class="t-icon">
+            <img src="./public/imgs/membership.png">
+          </div>
+          <h3>Membership <br> Organisations</h3>
+          <p>Our membership management software provides full automation of membership renewals and payments</p>
+        </div>
+        <div class="target flex-col center-y">
+          <div class="t-icon">
+            <img src="./public/imgs/associations.png">
+          </div>
+          <h3>National <br> Associations</h3>
+          <p>Our membership management software provides full automation of membership renewals and payments</p>
+        </div>
+        <div class="target flex-col center-y">
+          <div class="t-icon">
+            <img src="./public/imgs/clubs.png">
+          </div>
+          <h3>Clubs And <br> Groups</h3>
+          <p>Our membership management software provides full automation of membership renewals and payments</p>
+        </div>
+      </div>
+    </section>
+    <div class="learn-more flex center-x center-y section">
+      <img src="./public/imgs/learn-more-img1.png" alt="Learn More Image">
+      <div class="right">
+        <h2>The unseen of spending three years at Pixelgrade</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+    <section class="stats">
+      <div class="container flex center-x center-y">
+        <div class="left">
+          <h2>Helping a local <br> <span style="color: var(--clr-primary);">business reinvent itself</span></h2>
+          <p>We reached here with our hard work and dedication</p>
+        </div>
+        <div class="right flex center-x">
+          <div class="stat flex center-x center-y">
+            <img src="./public/imgs/members.png" alt="">
+						<div class="wrapper">
+							<h4>2,245,341</h4>
+							<p>Members</p>
+						</div>
+          </div>
+          <div class="stat flex center-x center-y">
+            <img src="./public/imgs/clubs.png" alt="">
+						<div class="wrapper">
+							<h4>46,328</h4>
+							<p>Clubs</p>
+						</div>
+          </div>
+          <div class="stat flex center-x center-y">
+            <img src="./public/imgs/bookings.png" alt="">
+						<div class="wrapper">
+							<h4>828,867</h4>
+							<p>Event Bookings</p>
+						</div>
+          </div>
+          <div class="stat flex center-x center-y">
+            <img src="./public/imgs/payments.png" alt="">
+						<div class="wrapper">
+							<h4>1,926,436</h4>
+							<p>Payments</p>
+						</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="learn-more flex center-x center-y section">
+      <img src="./public/imgs/learn-more-img2.png" alt="Learn More Image">
+      <div class="right">
+        <h2>How to design your site footer like we did</h2>
+        <p>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+        <button class="btn">Learn More</button>
+      </div>
+    </div>
+  </main>
   <script type="module" src="./src/main.js"></script>
 </body>
 

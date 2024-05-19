@@ -1,0 +1,34 @@
+.stats {
+  padding: 4rem 0.5rem;
+  margin-top: 4rem;
+  background-color: var(--clr-silver);
+}
+
+.stats .container {
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.stats .left {
+  /* min-width: 20rem; */
+}
+
+.stats .left p {
+  margin-top: 1rem;
+}
+
+.stats .right {
+  padding: 1rem;
+  width: 40rem;
+  gap: 2.5rem 1rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1 0 13rem;
+  gap: 0.7rem;
+}
+
+.stat img {
+  width: 3rem;
+}

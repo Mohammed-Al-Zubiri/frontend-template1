@@ -1,5 +1,11 @@
 import '../styles/modern-normalize.css'
 import '../styles/reset.css'
 import '../styles/style.css'
+import '../styles/components/header.css'
+import '../styles/components/hero.css'
+import '../styles/components/clients.css'
+import '../styles/components/community.css'
+import '../styles/components/learn-more.css'
+import '../styles/components/stats.css'
 // Components Here
 import '../styles/utils.css'

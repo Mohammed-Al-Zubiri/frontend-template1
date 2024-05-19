@@ -1,61 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* ===== Variables and Globals ===== */
 
 :root {
-  --font: "GeneralSans";
-  
-  /* Colors */
-  
-  --hue: -88;
-  --saturation: 80%;
-  --lightness: 38.4%;
-  
-  --clr-main: hsl(var(--hue), var(--saturation), var(--lightness));
-  
-  --clr-light: hsl(
-    var(--hue),
-    var(--saturation),
-    calc(var(--lightness) + (100% - var(--lightness)) * 0.9)
-    );
-    --clr-dark: hsl(var(--hue), var(--saturation), calc(var(--lightness) * 0.7));
+  --font: "Inter", sans-serif;
 
-    --clr-bg: hsl(var(--hue), var(--saturation), 99.5%);
-    --clr-text: hsl(var(--hue), var(--saturation), calc(var(--lightness) * 0.4));
-    
-    --hue2: 99;
-    --saturation2: var(--saturation);
-    --lightness2: var(--lightness);
-    --clr-secondary: hsl(var(--hue2), var(--saturation2), var(--lightness2));
-    
-    /* Sizes */
-    
-    --size-xxs: 0.5rem;
-    --size-xs: 0.75rem;
-    --size-sm: 0.875rem;
-    --size-md: 1rem;
-    --size-lg: 1.125rem;
-    --size-xl: 1.25rem;
-    --size-2xl: 1.5rem;
-    --size-3xl: 1.875rem;
-    --size-4xl: 2.25rem;
-    --size-5xl: 3rem;
-    --size-6xl: 3.75rem;
-    --size-7xl: 4.5rem;
-    --size-9xl: 6rem;
-    --size-9xl: 8rem;
-    --size-10xl: 10rem;
-  }
+  /* Colors */
+
+  --clr-black: #263238;
+  --clr-dark-grey: #4D4D4D;
+  --clr-grey: #717171;
+  --clr-light-Grey: #89939E;
+  --clr-grey-blue: #ABBED1;
+  --clr-silver: #F5F7FA;
+  --clr-white: #FFFFFF;
+  --clr-primary: #4CAF4F;
+  --clr-secondary: #263238;
+  --clr-info: #2194f3;
+  --clr-shade-1: #43A046;
+  --clr-shade-2: #388E3B;
+  --clr-shade-3: #237D31;
+  --clr-shade-4: #1B5E1F;
+  --clr-shade-5: #103E13;
+  --clr-tint-1: #66BB69;
+  --clr-tint-2: #81C784;
+  --clr-tint-3: #A5D6A7;
+  --clr-tint-4: #C8E6C9;
+  --clr-tint-5: #E8F5E9;
+
+  /* Sizes */
   
-  p {
-    color: var(--clr-text);
-  }
-  
-  a {
-    color: var(--clr-main);
-  }
-  
-  strong {
-    color: var(--clr-secondary);
-  }
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-md: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-9xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--clr-dark-grey);
+}
+
+a:hover {
+  color: var(--clr-primary);
+}
+
+strong {
+  color: var(--clr-secondary);
+}
   
 /* ===== Variables and Globals ===== */
   
