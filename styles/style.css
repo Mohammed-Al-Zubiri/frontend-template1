@@ -69,7 +69,6 @@ strong {
   height: 3rem;
   position: sticky;
   bottom: 0;
-  right: 2rem;
   z-index: 77;
   border-radius: 12px 12px 0 0;
   background-color: var(--clr-black);
