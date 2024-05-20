@@ -47,6 +47,10 @@
   --size-10xl: 10rem;
 }
 
+html {
+  scroll-padding: 4.7rem;
+}
+
 body {
   font-family: var(--font);
   color: var(--clr-dark-grey);
