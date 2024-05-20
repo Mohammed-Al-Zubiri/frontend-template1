@@ -3,9 +3,10 @@
   top: 0;
   z-index: 10;
   background: var(--clr-white);
-  border: 1px solid var(--clr-tint-2);
-  border-top: none;
-  border-radius: 0 0 7px 7px;
+  border-bottom: 1px solid var(--clr-light-Grey);
+}
+
+.pg-header .container {
   padding: 0.5rem;
   justify-content: space-between;
 }
@@ -128,7 +129,7 @@
 
 /* lg */
 @media (min-width: 1024px) {
-  .pg-header {
+  .pg-header .container {
     padding: 0.7rem;
   }
 
