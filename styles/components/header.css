@@ -49,53 +49,52 @@
   .pg-header .with-icon::before {
     display: none;
   }
-  
+
   .pg-header .with-icon {
     padding-right: 1.2em;
   }
 }
 
 @media (max-width: 640px) {
-  .header-links:hover .nav-menu::before,
-  .header-links:focus-visible .nav-menu::before {
+  .burger-icon:hover + .nav-menu::before,
+  .burger-icon:focus-visible + .nav-menu::before {
     content: "";
     border: 8px solid;
     border-color: transparent transparent var(--clr-tint-4);
     position: absolute;
     top: -16px;
-    right: 130px;
+    right: 143px;
   }
 
-  .header-links:hover .nav-menu,
-  .header-links:focus-visible .nav-menu {
+  .burger-icon:hover + .nav-menu,
+  .burger-icon:focus-visible + .nav-menu {
     padding: var(--size-xs);
     background: var(--clr-tint-4);
     border-radius: 10px;
     position: absolute;
     right: 0;
     min-width: 170px;
-    top: calc(100% + 16px);
+    top: calc(100% + 8px);
     z-index: 9;
     display: flex;
   }
 
-  .header-links:hover li,
-  .header-links:focus-visible li {
+  .burger-icon:hover + .nav-menu li,
+  .burger-icon:focus-visible + .nav-menu li {
     width: 100%;
     transition: padding 300ms;
   }
 
-  .header-links:hover li:hover,
-  .header-links:focus-visible li:hover,
-  .header-links:hover li:focus-visible,
-  .header-links:focus-visible li:focus-visible {
+  .burger-icon:hover + .nav-menu li:hover,
+  .burger-icon:focus-visible + .nav-menu li:hover,
+  .burger-icon:hover + .nav-menu li:focus-visible,
+  .burger-icon:focus-visible + .nav-menu li:focus-visible {
     padding-left: 20px;
   }
 }
 
 .pg-header .logo {
   width: 6.25rem;
-  height: 0.85rem;
 }
 
 .nav-menu ul {
@@ -139,7 +138,6 @@
 
   .pg-header .logo {
     width: 8.75rem;
-    height: 1.25rem;
   }
 
   .nav-menu ul {
