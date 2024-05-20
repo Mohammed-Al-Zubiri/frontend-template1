@@ -7,5 +7,8 @@ import '../styles/components/clients.css'
 import '../styles/components/community.css'
 import '../styles/components/learn-more.css'
 import '../styles/components/stats.css'
+import '../styles/components/tesla.css'
+import '../styles/components/blogs.css'
+import '../styles/components/footer.css'
 // Components Here
 import '../styles/utils.css'

@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   gap: var(--size-md);
 }
+
 .learn-more > img {
   width: 21rem;
   transform: translateX(-1rem);

@@ -1,4 +1,11 @@
 .pg-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--clr-white);
+  border: 1px solid var(--clr-tint-2);
+  border-top: none;
+  border-radius: 0 0 7px 7px;
   padding: 0.5rem;
   justify-content: space-between;
 }
@@ -36,6 +43,16 @@
 .burger-icon:hover,
 .burger-icon:focus-visible {
   background-color: var(--clr-tint-4);
+}
+
+@media (max-width: 290px) {
+  .pg-header .with-icon::before {
+    display: none;
+  }
+  
+  .pg-header .with-icon {
+    padding-right: 1.2em;
+  }
 }
 
 @media (max-width: 640px) {

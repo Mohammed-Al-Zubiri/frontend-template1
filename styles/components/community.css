@@ -9,15 +9,15 @@
 .audience {
   width: 100%;
   padding-top: var(--size-2xl);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  flex-wrap: wrap;
   gap: var(--size-xl);
   justify-content: space-between;
   justify-items: center;
 }
 
 .target {
-  width: 100%;
+  max-width: 22rem;
+  flex: 1 0 30%;
   text-align: center;
 }
 

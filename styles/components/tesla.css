@@ -1,0 +1,78 @@
+.tesla {
+  margin-top: var(--size-5xl);
+  padding: var(--size-2xl);
+  background: var(--clr-silver);
+}
+
+.tesla .container {
+  flex-wrap: wrap;
+  gap: var(--size-5xl);
+}
+
+.tesla .container > img {
+  flex: 1 0 20rem;
+  max-width: 20rem;
+}
+
+.tesla .right {
+  flex: 1 0 90%;
+  max-width: 45rem;
+}
+
+.tesla .right h5 {
+  color: var(--clr-primary);
+  margin-top: var(--size-md);
+}
+
+.tesla .right h5 + p {
+  color: var(--clr-grey);
+  margin-top: var(--size-xxs);
+}
+
+.tesla .wrapper {
+  flex-wrap: wrap;
+}
+
+.tesla .wrapper button {
+  flex: 1 0 33%;
+  max-width: fit-content;
+  font-weight: 500;
+}
+
+.tesla .logos {
+  flex: 1 0 67%;
+  width: 100%;
+  padding: var(--size-md);
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+  gap: clamp(var(--size-md), 5vw, var(--size-2xl));
+}
+
+.tesla .logos img {
+  width: var(--size-5xl);
+}
+
+@media (min-width: 1024px) {
+  .tesla {
+    margin-top: var(--size-6xl);
+    padding: var(--size-3xl);
+    background: var(--clr-silver);
+  }
+
+  .tesla .container > img {
+    max-width: 25rem;
+  }
+
+  .tesla .container {
+    gap: var(--size-6xl);
+  }
+
+  .tesla .right h5 {
+    margin-top: var(--size-lg);
+  }
+
+  .tesla .right h5 + p {
+    margin-top: var(--size-xs);
+  }
+}
