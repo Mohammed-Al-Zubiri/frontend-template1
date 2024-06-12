@@ -35,6 +35,7 @@
 }
 
 .blog .over h5 {
+  margin-bottom: var(--size-sm);
   font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.5rem;

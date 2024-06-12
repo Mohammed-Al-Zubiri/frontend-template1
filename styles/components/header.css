@@ -8,10 +8,13 @@
 
 .pg-header .container {
   padding: 0.5rem 0.7rem;
-  justify-content: space-between;
+  gap: 0.25rem;
+  /* justify-content: space-between; */
 }
 
 .header-links {
+  margin-left: auto;
+  margin-right: var(--size-md);
   gap: 0.25rem;
   position: relative;
 }
@@ -57,25 +60,29 @@
 }
 
 @media (max-width: 640px) {
-  .burger-icon:hover + .nav-menu::before,
-  .burger-icon:focus-visible + .nav-menu::before {
+  .header-links {
+    margin-right: var(--size-xxs);
+  }
+
+  .header-links:hover .nav-menu::before,
+  .header-links:focus-visible .nav-menu::before {
     content: "";
     border: 8px solid;
     border-color: transparent transparent var(--clr-tint-4);
     position: absolute;
-    top: -16px;
+    top: -15px;
     right: 143px;
   }
 
-  .burger-icon:hover + .nav-menu,
-  .burger-icon:focus-visible + .nav-menu {
+  .header-links:hover .nav-menu,
+  .header-links:focus-visible .nav-menu {
     padding: var(--size-xs);
     background: var(--clr-tint-4);
     border-radius: 10px;
     position: absolute;
-    right: 0;
+    right: -135px;
     min-width: 170px;
-    top: calc(100% + 8px);
+    top: calc(100% + 10px);
     z-index: 88;
     display: flex;
   }

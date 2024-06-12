@@ -88,6 +88,10 @@ strong {
   width: 1.2rem;
 }
 
+.sticky svg:hover {
+  fill: var(--clr-primary);
+}
+
 @media (max-width: 640px) {
   .sticky {
     position: sticky;
