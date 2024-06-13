@@ -49,6 +49,18 @@
   background-color: var(--clr-tint-4);
 }
 
+.pg-header .logo {
+  width: 6.25rem;
+}
+
+.nav-menu ul {
+  gap: 0.55rem;
+}
+
+.nav-menu ul a {
+  padding-inline: 0.35rem; 
+}
+
 @media (max-width: 290px) {
   .pg-header .with-icon::before {
     display: none;
@@ -82,32 +94,24 @@
     width: 150px;
     top: calc(100% + 10px);
     z-index: 88;
-    display: flex;
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: block;
   }
 
   .nav-menu ul a {
     display: block;
-    width: 130px;
+    padding: 0.25rem 0.35rem; 
+    width: 100%;
     transition: padding 300ms;
   }
 
   .nav-menu ul a:hover,
   .nav-menu ul a:focus-visible {
-    /* text-decoration: none; */
     padding-left: 0.6rem;
   }
-}
-
-.pg-header .logo {
-  width: 6.25rem;
-}
-
-.nav-menu ul {
-  gap: 0.55rem;
-}
-
-.nav-menu ul a {
-  padding-inline: 0.35rem; 
 }
 
 /* sm */
